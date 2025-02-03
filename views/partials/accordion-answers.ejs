@@ -1,0 +1,75 @@
+<div id="accordion-open" data-accordion="collapse" class="w-[80vw] rounded-lg">
+    <h1 class="font-bold text-2xl self-start my-8">Your responses</h1>
+    <% for(let i = 0; i < questions.length; i++) { %>
+        <h2 id="accordion-open-heading-<%= i %>">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-900 border border-b-0 border-gray-200  focus:ring-4 focus:ring-gray-200 bg-red-50 gap-3"
+                data-accordion-target="#accordion-open-body-<%= i %>" aria-expanded="true" aria-controls="accordion-open-body-<%= i %>">
+                <span class="flex items-center">
+                    <%= questions[i].question %>
+                </span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
+                </svg>
+            </button>
+        </h2>
+        <div id="accordion-open-body-<%= i %>" class="hidden" aria-labelledby="accordion-open-heading-<%= i %>">
+            <div class="p-5 border border-b-0 border-gray-200 bg-red-200">
+                <section class="mt-5 flex flex-col items-center mx-4 space-y-6 font-extrabold">
+            
+                    <% Object.keys(questions[i].options).forEach((key, index) => { %>
+
+                        <% if (questions[i].options[key] === answered[i]) { %>
+                            
+                            <!-- CORRECTLY ANSWERED OPTION -->
+                            <% if (answered[i] === questions[i].correct) { %>
+                                <div class="bg-green-500 md:w-[40%] w-full h-14 rounded-lg flex items-center px-6">
+                                    <p class="py-2 px-4 bg-red-50 rounded-full">
+                                        <%= String.fromCharCode(65 + index) %>
+                                    </p>
+                                    <p for="question<%= i %>-option<%= key %>" class="text-white options px-6">
+                                        <%= questions[i].options[key] %>
+                                    </p>
+                                </div>
+
+                            <!-- INCORRECTLY ANSWERED OPTION -->
+                            <% } else { %>
+                                <div class="bg-red-500 md:w-[40%] w-full h-14 rounded-lg flex items-center px-6">
+                                    <p class="py-2 px-4 bg-red-50 rounded-full">
+                                        <%= String.fromCharCode(65 + index) %>
+                                    </p>
+                                    <p for="question<%= i %>-option<%= key %>" class="text-white options px-6">
+                                        <%= questions[i].options[key] %>
+                                    </p>
+                                </div>
+                            <% } %>
+
+                        <% } else if (questions[i].options[key] === questions[i].correct) { %>
+                            <!-- CORRECT UNANSWERED OPTION -->
+                            <div class="bg-green-500 md:w-[40%] w-full h-14 rounded-lg flex items-center px-6">
+                                <p class="py-2 px-4 bg-red-50 rounded-full">
+                                    <%= String.fromCharCode(65 + index) %>
+                                </p>
+                                <p for="question<%= i %>-option<%= key %>" class="text-white options px-6">
+                                    <%= questions[i].options[key] %>
+                                </p>
+                            </div>
+                            
+                            <% } else { %>
+                                <!-- NORMAL UNANSWERED OPTION -->
+                                <div class="bg-red-50 md:w-[40%] w-full h-14 rounded-lg flex items-center px-6">
+                                    <p class="py-2 px-4 bg-red-100 rounded-full">
+                                        <%= String.fromCharCode(65 + index) %>
+                                    </p>
+                                    <p for="question<%= i %>-option<%= key %>" class="options px-6">
+                                        <%= questions[i].options[key] %>
+                                    </p>
+                                </div>
+
+                        <% } %>
+
+                    <% }) %>
+                </section>
+            </div>
+        </div>
+    <% } %>
+</div>

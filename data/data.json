@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "question": "What is the capital of France?",
+        "options": [
+            "Berlin",
+            "Madrid",
+            "Paris",
+            "Rome"
+        ],
+        "correct_answer": "Paris"
+    },
+    {
+        "id": 2,
+        "question": "Which planet is known as the Red Planet?",
+        "options": [
+            "Earth",
+            "Mars",
+            "Jupiter",
+            "Venus"
+        ],
+        "correct_answer": "Mars"
+    },
+    {
+        "id": 3,
+        "question": "What is the chemical symbol for water?",
+        "options": [
+            "H2O",
+            "O2",
+            "CO2",
+            "NaCl"
+        ],
+        "correct_answer": "H2O"
+    },
+    {
+        "id": 4,
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "options": [
+            "Charles Dickens",
+            "William Shakespeare",
+            "Jane Austen",
+            "Mark Twain"
+        ],
+        "correct_answer": "William Shakespeare"
+    },
+    {
+        "id": 5,
+        "question": "Which is the largest mammal?",
+        "options": [
+            "Elephant",
+            "Blue Whale",
+            "Giraffe",
+            "Hippopotamus"
+        ],
+        "correct_answer": "Blue Whale"
+    },
+    {
+        "id": 6,
+        "question": "What is the square root of 64?",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        "correct_answer": "8"
+    },
+    {
+        "id": 7,
+        "question": "Which element has the atomic number 1?",
+        "options": [
+            "Oxygen",
+            "Hydrogen",
+            "Carbon",
+            "Nitrogen"
+        ],
+        "correct_answer": "Hydrogen"
+    }
+]

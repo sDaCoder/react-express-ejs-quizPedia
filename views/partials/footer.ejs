@@ -1,0 +1,20 @@
+<footer class="md:sticky bottom-0 flex md:bg-red-50 justify-around items-center md:space-x-4 mx-1 h-24  mt-4 w-full">
+    
+    <!-- The Progress Bar -->
+    <div class="md:flex justify-center items-center hidden">
+        <div class="bg-gray-300 w-52 rounded-xl overflow-hidden flex">
+            <div class="bar bg-green-500 h-4 transition-all ease-in-out" style="width: calc((<%= 1 %> / <%= questions.length %>) * 100%)"></div>
+        </div>
+        <p class="qLabel ml-2 font-semibold text-lg">
+            <%= 1 %>/<%= questions.length %>
+        </p>
+    </div>
+
+    <!-- Deselect Button -->
+    <!-- <button class="bg-yellow-500 md:hover:bg-red-600 active:bg-red-600 mx-6 px-10 py-[10px] md:w-[20%] w-full rounded font-semibold uppercase text-white" id="deselect">refresh</button> -->
+
+    <!-- Continue Button -->
+    <button type="submit" class="bg-green-500 md:hover:bg-green-600 active:bg-green-600 disabled:bg-gray-500 disabled:cursor-not-allowed disabled:hover:bg-gray-500 mx-6 px-10 py-[10px] md:w-[20%] w-full rounded font-semibold uppercase text-white">
+        continue
+    </button>
+</footer>

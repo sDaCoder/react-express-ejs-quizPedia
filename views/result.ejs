@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-red-100 select-none">
+    <%- include ('./partials/header.ejs') %>
+    <div class="flex flex-col items-center justify-center py-8 gap-y-8">
+        <%- include ('./partials/pie-chart.ejs') %>
+        <%- include ('./partials/accordion-answers.ejs') %>
+    </div>
+    
+    <footer class="flex md:bg-red-50 justify-around items-center md:space-x-4 mx-1 h-24  mt-4 w-full">
+        <button class="bg-green-500 md:hover:bg-green-600 active:bg-green-600 disabled:bg-gray-500 disabled:cursor-not-allowed disabled:hover:bg-gray-500 mx-6 px-10 py-[10px] md:w-[20%] w-full rounded font-semibold uppercase text-white">
+            try again
+        </button>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts@3.46.0/dist/apexcharts.min.js"></script>
+<script>
+    
+    const getChartOptions = (series) => {
+        return {
+            series,
+            colors: ["#22c55e", "#ef4444", "#eab308"],
+            chart: {
+                height: 420,
+                width: "100%",
+                type: "pie",
+            },
+            stroke: {
+                colors: ["white"],
+                lineCap: "",
+            },
+            plotOptions: {
+                pie: {
+                    labels: {
+                        show: true,
+                    },
+                    size: "100%",
+                    dataLabels: {
+                        offset: -25
+                    }
+                },
+            },
+            labels: ["Correct", "Incorrect", "Unanswered"],
+            dataLabels: {
+                enabled: true,
+                style: {
+                    fontFamily: "Inter, sans-serif",
+                },
+            },
+            legend: {
+                position: "bottom",
+                fontFamily: "Inter, sans-serif",
+            },
+            yaxis: {
+                labels: {
+                    formatter: function (value) {
+                        return value
+                    },
+                },
+            },
+            xaxis: {
+                labels: {
+                    formatter: function (value) {
+                        return value
+                    },
+                },
+                axisTicks: {
+                    show: false,
+                },
+                axisBorder: {
+                    show: false,
+                },
+            },
+        }
+    }
+
+    const series = [10, 20, 23];
+
+    if (document.getElementById("pie-chart") && typeof ApexCharts !== 'undefined') {
+        const chart = new ApexCharts(document.getElementById("pie-chart"), getChartOptions(series));
+        chart.render();
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "ejs-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "pnpm exec tailwindcss -i public/styles/tailwind.css -o public/styles/styles.css --watch",
+    "dev": "concurrently \"pnpm exec tailwindcss -i public/styles/tailwind.css -o public/styles/styles.css --watch\" \"nodemon app.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "appwrite": "^17.0.0",
+    "body-parser": "^1.20.3",
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}
