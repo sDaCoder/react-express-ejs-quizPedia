@@ -1,8 +1,9 @@
 import express from "express";
 import bodyParser from "body-parser";
 import questionsRoute from "./routes/questions-route.js";
-import "dotenv/config"
+import dotenv from "dotenv";
 
+dotenv.config({ path: './secret.env' });
 const app = express();
 const port = process.env.PORT || 3000;
 

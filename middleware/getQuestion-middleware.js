@@ -1,18 +1,20 @@
-import "dotenv/config"
 import { Client, Databases } from 'appwrite';
+import dotenv from 'dotenv';
+
+dotenv.config({ path: './secret.env' });
 
 const getQuestions = async (req, res, next) => {
   
     const client = new Client()
         .setEndpoint('https://cloud.appwrite.io/v1')
-        .setProject(`${process.env.PROJECT_ID}`); // Project ID
+        .setProject(process.env.PROJECT_ID); // Project ID
     
     const databases = new Databases(client);
     
     try {
         const data = await databases.listDocuments(
-            `${process.env.DATABASE_ID}`, // Database ID
-            `${process.env.GENERAL_COLLECTION_ID}`, // Collection ID
+            process.env.DATABASE_ID, // Database ID
+            process.env.GENERAL_COLLECTION_ID, // Collection ID
         );
         const questions = data.documents.map(doc => ({
             id: doc.$id,

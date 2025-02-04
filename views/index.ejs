@@ -31,6 +31,9 @@
                 </section>
         
                 <section class="mt-5 flex flex-col items-center mx-4 space-y-6 font-extrabold">
+
+                    <!-- Hidden input to ensure unanswered questions get sent -->
+                    <input type="radio" name="answered[<%= i %>]" value="Unanswered" class="hidden" checked>
         
                     <% Object.keys(questions[i].options).forEach((key, index) => { %>
 

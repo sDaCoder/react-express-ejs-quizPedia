@@ -28,6 +28,18 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.46.0/dist/apexcharts.min.js"></script>
 <script>
     
+    const questions = <%- JSON.stringify(questions) %>;
+    const answered = <%- JSON.stringify(answered) %>;
+
+    let series = [0, 0, 0];
+    answered.forEach((answer, index) => {
+        if(answer === 'Unanswered')   series[2] += 1
+        else if(answer === questions[index].correct) series[0] += 1 // Correct answer
+        else series[1] += 1 // Inocrrct answer
+    })
+    
+    document.getElementById("score").innerHTML = `You scored ${series[0] * 100}`
+
     const getChartOptions = (series) => {
         return {
             series,
@@ -86,7 +98,7 @@
         }
     }
 
-    const series = [10, 20, 23];
+    
 
     if (document.getElementById("pie-chart") && typeof ApexCharts !== 'undefined') {
         const chart = new ApexCharts(document.getElementById("pie-chart"), getChartOptions(series));
