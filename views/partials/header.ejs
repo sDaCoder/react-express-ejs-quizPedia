@@ -1,7 +1,19 @@
 <nav class="flex justify-around items-center bg-red-50 max-h-40 h-16 w-full flex-wrap">
-    <div class="flex items-center justify-center gap-2">
+    <div class="flex items-center justify-center gap-2 cursor-pointer" onclick="location.href = '/'">
         <img class="w-6 h-6" src="/assets/favicon.svg" alt="" srcset="">
         <h1 class="font-bold text-2xl">quizPedia</h1>
     </div>
     <div class="font-semibold text-xl text-center">General Knowledge#123</div>
+    <div class="flex items-center bg-white border-[1px] border-black rounded font-semibold px-2 p-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-lightbulb mr-2" viewBox="0 0 16 16">
+            <path
+                d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1" />
+        </svg>
+        <% if (questions) { %>
+            <p class="hidden md:block">
+                Total <%= questions.length * 100 %> Points
+            </p>
+        <% } %>
+    </div>
 </nav>
