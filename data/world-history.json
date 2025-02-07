@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Who was the first President of the United States?",
+        "options": [
+            "Thomas Jefferson",
+            "George Washington",
+            "Abraham Lincoln",
+            "John Adams"
+        ],
+        "correct": "George Washington"
+    },
+    {
+        "question": "Which ancient civilization built the pyramids?",
+        "options": [
+            "Greek",
+            "Roman",
+            "Egyptian",
+            "Mayan"
+        ],
+        "correct": "Egyptian"
+    },
+    {
+        "question": "In which year did World War II end?",
+        "options": [
+            "1943",
+            "1944",
+            "1945",
+            "1946"
+        ],
+        "correct": "1945"
+    },
+    {
+        "question": "Who discovered America in 1492?",
+        "options": [
+            "Christopher Columbus",
+            "Vasco da Gama",
+            "Ferdinand Magellan",
+            "Marco Polo"
+        ],
+        "correct": "Christopher Columbus"
+    },
+    {
+        "question": "Which country was the first to land a man on the moon?",
+        "options": [
+            "Soviet Union",
+            "United States",
+            "China",
+            "United Kingdom"
+        ],
+        "correct": "United States"
+    },
+    {
+        "question": "The Great Wall of China was primarily built to protect against which group?",
+        "options": [
+            "Romans",
+            "Mongols",
+            "Persians",
+            "Vikings"
+        ],
+        "correct": "Mongols"
+    },
+    {
+        "question": "Who was the first Emperor of China?",
+        "options": [
+            "Emperor Meiji",
+            "Qin Shi Huang",
+            "Kublai Khan",
+            "Sun Yat-sen"
+        ],
+        "correct": "Qin Shi Huang"
+    },
+    {
+        "question": "What year did the French Revolution begin?",
+        "options": [
+            "1776",
+            "1789",
+            "1804",
+            "1812"
+        ],
+        "correct": "1789"
+    },
+    {
+        "question": "Who was the British Prime Minister during World War II?",
+        "options": [
+            "Neville Chamberlain",
+            "Winston Churchill",
+            "Margaret Thatcher",
+            "Clement Attlee"
+        ],
+        "correct": "Winston Churchill"
+    },
+    {
+        "question": "Which empire was ruled by Julius Caesar?",
+        "options": [
+            "Greek Empire",
+            "Byzantine Empire",
+            "Roman Empire",
+            "Ottoman Empire"
+        ],
+        "correct": "Roman Empire"
+    }
+]

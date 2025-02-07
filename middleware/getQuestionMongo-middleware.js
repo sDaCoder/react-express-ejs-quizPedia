@@ -1,16 +1,17 @@
 import mongoose from "mongoose";
 import dotenv from 'dotenv';
-import GeneralModel from '../models/question-model.js';
+import dataModel from '../models/question-model.js';
 
 dotenv.config({ path: './secret.env' });
 const mongoURI = process.env.MONGO_URI;
-const General = GeneralModel.General;
+const General = dataModel.General;
+const WorldHistory = dataModel.WorldHistory;
 
 
 const getQuestions = async (req, _, next) => {
     try {
         await mongoose.connect(mongoURI);
-        const data = await General.find({});
+        const data = await WorldHistory.find({});
         const questions = data.map(doc => ({
             id: doc.$id,
             question: doc.question,
