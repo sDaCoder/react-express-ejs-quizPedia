@@ -6,7 +6,8 @@ const router = express.Router();
 
 router
     .route('/')
-    .get(getQuestionsMiddleware.getQuestions, questionsController.displayQuestions)
-    .post(getQuestionsMiddleware.getQuestions, questionsController.postAnswers);
+    .all(getQuestionsMiddleware.getQuestions)
+    .get(questionsController.displayQuestions)
+    .post(questionsController.postAnswers);
 
 export default {router};

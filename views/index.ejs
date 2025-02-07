@@ -21,41 +21,7 @@
         </div>
         
         <div class="flex flex-col justify-center" style="padding: 2rem; gap: 2rem 0;">
-            
-            <% for(let i = 0; i < questions.length; i++) { %>
-                <section class="mt-6 space-y-5">
-        
-                    <div id="qarea" class="mx-4 font-bold uppercase text-center md:text-2xl text-xl text-blue-900 flex items-center justify-center">
-                        <%= questions[i].question %>
-                    </div>
-                </section>
-        
-                <section class="mt-5 flex flex-col items-center mx-4 space-y-6 font-extrabold">
-
-                    <!-- Hidden input to ensure unanswered questions get sent -->
-                    <input type="radio" name="answered[<%= i %>]" value="Unanswered" class="hidden" checked>
-        
-                    <% Object.keys(questions[i].options).forEach((key, index) => { %>
-
-                        <div class="bg-red-50 md:hover:bg-green-200 md:w-[40%] w-full h-14 rounded-lg flex items-center px-6">
-                            <p class="py-2 px-4 bg-red-100 rounded-full">
-                                <%= String.fromCharCode(65 + index) %>
-                            </p>
-                            <input 
-                                type="radio" 
-                                id="question<%= i %>-option<%= key %>" 
-                                name="answered[<%= i %>]" 
-                                value="<%= questions[i].options[key] %>" 
-                                class="hidden"
-                            >
-                            <label for="question<%= i %>-option<%= key %>" class="options px-6 cursor-pointer">
-                                <%= questions[i].options[key] %>
-                            </label>
-                        </div>
-
-                    <% }) %>
-                </section>
-            <% } %>
+            <%- include ('./partials/question-card.ejs') %>
         </div>
 
         <%- include ('./partials/footer.ejs') %>
