@@ -1,0 +1,102 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "options": [
+            "Madrid",
+            "Berlin",
+            "Paris",
+            "Rome"
+        ],
+        "correct": "Paris"
+    },
+    {
+        "question": "Which is the longest river in the world?",
+        "options": [
+            "Amazon River",
+            "Nile River",
+            "Yangtze River",
+            "Mississippi River"
+        ],
+        "correct": "Nile River"
+    },
+    {
+        "question": "Which country is known as the Land of the Rising Sun?",
+        "options": [
+            "China",
+            "South Korea",
+            "Japan",
+            "Thailand"
+        ],
+        "correct": "Japan"
+    },
+    {
+        "question": "Mount Everest is located in which mountain range?",
+        "options": [
+            "Andes",
+            "Alps",
+            "Himalayas",
+            "Rockies"
+        ],
+        "correct": "Himalayas"
+    },
+    {
+        "question": "Which desert is the largest in the world?",
+        "options": [
+            "Sahara Desert",
+            "Gobi Desert",
+            "Kalahari Desert",
+            "Atacama Desert"
+        ],
+        "correct": "Sahara Desert"
+    },
+    {
+        "question": "Which country has the most natural lakes?",
+        "options": [
+            "United States",
+            "Canada",
+            "Brazil",
+            "Russia"
+        ],
+        "correct": "Canada"
+    },
+    {
+        "question": "What is the smallest country in the world?",
+        "options": [
+            "Monaco",
+            "San Marino",
+            "Vatican City",
+            "Liechtenstein"
+        ],
+        "correct": "Vatican City"
+    },
+    {
+        "question": "Which ocean is the largest?",
+        "options": [
+            "Atlantic Ocean",
+            "Indian Ocean",
+            "Arctic Ocean",
+            "Pacific Ocean"
+        ],
+        "correct": "Pacific Ocean"
+    },
+    {
+        "question": "Which U.S. state has the most islands?",
+        "options": [
+            "Hawaii",
+            "Alaska",
+            "Florida",
+            "California"
+        ],
+        "correct": "Alaska"
+    },
+    {
+        "question": "Which continent has the most countries?",
+        "options": [
+            "Asia",
+            "Europe",
+            "Africa",
+            "South America"
+        ],
+        "correct": "Africa"
+    }
+]

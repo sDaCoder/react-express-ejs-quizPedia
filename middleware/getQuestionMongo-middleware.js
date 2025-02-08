@@ -1,17 +1,20 @@
-import mongoose from "mongoose";
-import dotenv from 'dotenv';
-import dataModel from '../models/question-model.js';
+import { MongoClient } from "mongodb";
+import dotenv from "dotenv";
 
 dotenv.config({ path: './secret.env' });
-const mongoURI = process.env.MONGO_URI;
-const General = dataModel.General;
-const WorldHistory = dataModel.WorldHistory;
-
+const uri = process.env.MONGO_URI;
+const client = new MongoClient(uri);
 
 const getQuestions = async (req, _, next) => {
+    const {category} = req.params;
+    
     try {
-        await mongoose.connect(mongoURI);
-        const data = await WorldHistory.find({});
+        await client.connect();
+        const database = client.db("questions");
+        const collection = database.collection(category);
+
+        // Fetch all documents
+        const data = await collection.find({}).toArray();
         const questions = data.map(doc => ({
             id: doc.$id,
             question: doc.question,
@@ -23,6 +26,8 @@ const getQuestions = async (req, _, next) => {
     } catch (error) {
         console.error("Error:", error);
         next(error);
+    } finally {
+        await client.close();
     }
 }
 

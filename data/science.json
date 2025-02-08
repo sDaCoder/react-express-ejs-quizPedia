@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Who developed the theory of general relativity?",
+        "options": [
+            "Isaac Newton",
+            "Albert Einstein",
+            "Galileo Galilei",
+            "Stephen Hawking"
+        ],
+        "correct": "Albert Einstein"
+    },
+    {
+        "question": "What is the chemical symbol for gold?",
+        "options": [
+            "Ag",
+            "Au",
+            "Pb",
+            "Fe"
+        ],
+        "correct": "Au"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "options": [
+            "Venus",
+            "Mars",
+            "Jupiter",
+            "Saturn"
+        ],
+        "correct": "Mars"
+    },
+    {
+        "question": "Who is credited with inventing the telephone?",
+        "options": [
+            "Alexander Graham Bell",
+            "Thomas Edison",
+            "Nikola Tesla",
+            "Guglielmo Marconi"
+        ],
+        "correct": "Alexander Graham Bell"
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": [
+            "Nucleus",
+            "Mitochondria",
+            "Ribosome",
+            "Golgi apparatus"
+        ],
+        "correct": "Mitochondria"
+    },
+    {
+        "question": "Which element has the atomic number 1?",
+        "options": [
+            "Oxygen",
+            "Helium",
+            "Hydrogen",
+            "Carbon"
+        ],
+        "correct": "Hydrogen"
+    },
+    {
+        "question": "Which programming language is known for its snake logo?",
+        "options": [
+            "Java",
+            "Python",
+            "C++",
+            "Ruby"
+        ],
+        "correct": "Python"
+    },
+    {
+        "question": "What is the speed of light in a vacuum?",
+        "options": [
+            "299,792 km/s",
+            "150,000 km/s",
+            "1,080 km/h",
+            "500,000 km/s"
+        ],
+        "correct": "299,792 km/s"
+    },
+    {
+        "question": "Which scientist formulated the laws of motion?",
+        "options": [
+            "Galileo Galilei",
+            "Isaac Newton",
+            "Albert Einstein",
+            "Nikola Tesla"
+        ],
+        "correct": "Isaac Newton"
+    },
+    {
+        "question": "What does 'HTTP' stand for in web addresses?",
+        "options": [
+            "Hyper Text Transmission Protocol",
+            "Hyper Transfer Text Protocol",
+            "Hyperlink Text Transfer Protocol",
+            "Hyper Text Transfer Protocol"
+        ],
+        "correct": "Hyper Text Transfer Protocol"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "id": 2,
+        "category": "World History",
+        "description": "Try your luck with world history questions covering a wide range of topics, designed to test your understanding of various historical events and cultures",
+        "slug": "world-history",
+        "image": "/assets/world-history1.jpg"
+    },
+    {
+        "id": 1,
+        "category": "General Knowledge",
+        "description": "Test your general knowledge with a wide range of questions, designed to challenge your understanding of various topics and concepts",
+        "slug": "general-knowledge",
+        "image": "/assets/general-know.jpg"
+    },
+    {
+        "id": 3,
+        "category": "Travel and Geography",
+        "description": "Explore the world with travel questions, designed to challenge your understanding of various destinations, and cultures",
+        "slug": "travel-geography",
+        "image": "/assets/travel.jpg"
+    },
+    {
+        "id": 4,
+        "category": "Science and Technology",
+        "description": "Test your knowledge of science and technology with a wide range of questions",
+        "slug": "science-technology",
+        "image": "/assets/science.jpg"
+    },
+    {
+        "id": 5,
+        "category": "Sports",
+        "description": "Test your knowledge of sports and athletics with a wide range of questions",
+        "slug": "sports",
+        "image": "/assets/sports.jpg"
+    }
+]

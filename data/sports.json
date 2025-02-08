@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Which country won the FIFA World Cup in 2018?",
+        "options": [
+            "Brazil",
+            "France",
+            "Germany",
+            "Argentina"
+        ],
+        "correct": "France"
+    },
+    {
+        "question": "How many players are there in a standard soccer team?",
+        "options": [
+            "9",
+            "10",
+            "11",
+            "12"
+        ],
+        "correct": "11"
+    },
+    {
+        "question": "Which sport is known as the 'King of Sports'?",
+        "options": [
+            "Basketball",
+            "Cricket",
+            "Football",
+            "Tennis"
+        ],
+        "correct": "Football"
+    },
+    {
+        "question": "Who has won the most Grand Slam titles in men's tennis?",
+        "options": [
+            "Roger Federer",
+            "Rafael Nadal",
+            "Novak Djokovic",
+            "Pete Sampras"
+        ],
+        "correct": "Novak Djokovic"
+    },
+    {
+        "question": "In which year were the first modern Olympic Games held?",
+        "options": [
+            "1896",
+            "1900",
+            "1912",
+            "1924"
+        ],
+        "correct": "1896"
+    },
+    {
+        "question": "Which country has won the most Cricket World Cups?",
+        "options": [
+            "India",
+            "Australia",
+            "West Indies",
+            "England"
+        ],
+        "correct": "Australia"
+    },
+    {
+        "question": "Which NBA player is known as 'Air Jordan'?",
+        "options": [
+            "LeBron James",
+            "Michael Jordan",
+            "Kobe Bryant",
+            "Shaquille O'Neal"
+        ],
+        "correct": "Michael Jordan"
+    },
+    {
+        "question": "Which country hosts the Tour de France?",
+        "options": [
+            "Italy",
+            "Spain",
+            "France",
+            "Germany"
+        ],
+        "correct": "France"
+    },
+    {
+        "question": "Which sport uses a shuttlecock?",
+        "options": [
+            "Tennis",
+            "Squash",
+            "Badminton",
+            "Table Tennis"
+        ],
+        "correct": "Badminton"
+    },
+    {
+        "question": "How many rings are there in the Olympic symbol?",
+        "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "correct": "5"
+    }
+]

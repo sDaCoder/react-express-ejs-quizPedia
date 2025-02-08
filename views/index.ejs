@@ -10,15 +10,15 @@
 <body class="bg-red-100 select-none">
     <%- include ('./partials/header.ejs') %>
 
-    <form method="POST" action="/">
+    <form method="POST" action="/api/v1/<%= category %>">
 
         <!-- The Progress Bar -->
-        <div class="flex justify-center items-center md:hidden">
+        <!-- <div class="flex justify-center items-center md:hidden">
             <div class="bg-gray-300 w-4/5 rounded-xl overflow-hidden">
                 <div class="bar bg-green-500 h-4 transition-all ease-in-out"></div>
             </div>
             <p class="qLabel ml-2 font-semibold text-lg">1/5</p>
-        </div>
+        </div> -->
         
         <div class="flex flex-col justify-center" style="padding: 2rem; gap: 2rem 0;">
             <%- include ('./partials/question-card.ejs') %>

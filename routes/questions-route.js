@@ -5,7 +5,7 @@ import getQuestionsMiddleware from '../middleware/getQuestionMongo-middleware.js
 const router = express.Router();
 
 router
-    .route('/')
+    .route('/:category')
     .all(getQuestionsMiddleware.getQuestions)
     .get(questionsController.displayQuestions)
     .post(questionsController.postAnswers);
