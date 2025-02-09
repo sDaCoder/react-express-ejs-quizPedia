@@ -20,7 +20,9 @@
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "mongodb": "^6.13.0",
-    "mongoose": "^8.9.7"
+    "mongoose": "^8.9.7",
+    "nodemon": "^3.1.9",
+    "vercel": "^41.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
