@@ -30,7 +30,7 @@
     {
         "id": 5,
         "category": "Sports",
-        "description": "Test your knowledge of sports and athletics with a wide range of questions",
+        "description": "Test your knowledge of sports and athletics with a wide range of questions covering various disciplines and competitions",
         "slug": "sports",
         "image": "/assets/sports.jpg"
     }
