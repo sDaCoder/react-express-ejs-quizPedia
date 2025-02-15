@@ -4,7 +4,7 @@ import questionsRoute from "./routes/questions-route.js";
 import homeRoute from "./routes/home-route.js";
 import dotenv from "dotenv";
 
-dotenv.config({ path: './secret.env' });
+dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
