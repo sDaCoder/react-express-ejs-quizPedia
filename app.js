@@ -12,8 +12,8 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use("/", homeRoute.router);
-app.use("/", questionsRoute.router);
+app.use("/api/v1", homeRoute.router);
+app.use("/api/v1", questionsRoute.router);
 
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
